@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Embed Tester - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .intro {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .intro h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        .layouts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .layout-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        .layout-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+            transform: translateY(-2px);
+        }
+        .layout-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        .layout-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        .layout-card .btn {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+        .script-info {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 4px;
+        }
+        .script-info h3 {
+            color: #856404;
+            margin-bottom: 0.5rem;
+        }
+        .script-info code {
+            background: #fff;
+            padding: 1rem;
+            display: block;
+            margin-top: 1rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🤖 Chatbot Embed Tester</h1>
+        <p>Test your chatbot embed on different website layouts</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Welcome to the Chatbot Embed Testing Suite</h2>
+            <p>This application provides various standard website layouts to test your chatbot embed solution. Each page represents a common web layout pattern with Lorem ipsum content. Simply add your chatbot script tag to test how it behaves across different scenarios.</p>
+        </div>
+
+        <div class="script-info">
+            <h3>📝 How to Add Your Chatbot Script</h3>
+            <p>Add your chatbot script tag before the closing <code>&lt;/body&gt;</code> tag in each HTML file located in the <code>public/</code> directory. For example:</p>
+            <code>&lt;!-- Add your chatbot script here --&gt;<br>&lt;script src="https://your-chatbot-url.com/embed.js"&gt;&lt;/script&gt;</code>
+        </div>
+
+        <h2 style="margin-top: 2rem; margin-bottom: 1rem;">Available Test Layouts</h2>
+        
+        <div class="layouts-grid">
+            <a href="/blog" class="layout-card">
+                <h3>📰 Blog Layout</h3>
+                <p>Test your chatbot on a traditional blog layout with articles, sidebar, and comments section.</p>
+                <span class="btn">View Blog Layout →</span>
+            </a>
+
+            <a href="/ecommerce" class="layout-card">
+                <h3>🛒 E-commerce Layout</h3>
+                <p>See how your chatbot performs on a product page with images, descriptions, and shopping cart.</p>
+                <span class="btn">View E-commerce →</span>
+            </a>
+
+            <a href="/landing" class="layout-card">
+                <h3>🚀 Landing Page</h3>
+                <p>Test your chatbot on a modern landing page with hero section, features, and call-to-action.</p>
+                <span class="btn">View Landing Page →</span>
+            </a>
+
+            <a href="/dashboard" class="layout-card">
+                <h3>📊 Dashboard Layout</h3>
+                <p>Verify chatbot behavior on a data-heavy dashboard with charts, tables, and metrics.</p>
+                <span class="btn">View Dashboard →</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Chatbot Iframe Tester | For Testing Purposes Only</p>
+    </footer>
+
+    <!-- Add your chatbot script here -->
+    <!-- <script src="https://your-chatbot-url.com/embed.js"></script> -->
+</body>
+</html>
