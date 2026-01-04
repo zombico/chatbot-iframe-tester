@@ -1,0 +1,16 @@
+{
+  "name": "chatbot-iframe-tester",
+  "version": "1.0.0",
+  "description": "Testing deployment iframes for chatbot embed solutions",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["chatbot", "iframe", "testing", "embed"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

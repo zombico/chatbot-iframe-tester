@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - The Tech Chronicles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f5f5f5;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            border-bottom: 3px solid #e74c3c;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h1 {
+            font-size: 1.8rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #e74c3c;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+        .main-content {
+            background: white;
+        }
+        article {
+            padding: 2rem;
+            margin-bottom: 2rem;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        article h2 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+        .meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        article img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        article p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        .read-more {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .sidebar {
+            background: white;
+            padding: 1.5rem;
+            height: fit-content;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .sidebar h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e74c3c;
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        .sidebar a {
+            color: #34495e;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            color: #e74c3c;
+        }
+        .widget {
+            margin-bottom: 2rem;
+        }
+        .back-home {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 1rem 2rem;
+        }
+        .back-home:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>📰 The Tech Chronicles</h1>
+            <ul>
+                <li><a href="/">← Back to Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            <article>
+                <h2>The Future of Artificial Intelligence in Everyday Life</h2>
+                <div class="meta">Posted on December 15, 2024 by John Doe | 5 min read</div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='300'%3E%3Crect fill='%233498db' width='800' height='300'/%3E%3Ctext fill='white' font-size='24' font-family='Arial' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EAI Technology%3C/text%3E%3C/svg%3E" alt="AI Technology">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <a href="#" class="read-more">Continue Reading →</a>
+            </article>
+
+            <article>
+                <h2>Understanding Machine Learning: A Beginner's Guide</h2>
+                <div class="meta">Posted on December 12, 2024 by Jane Smith | 7 min read</div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='300'%3E%3Crect fill='%239b59b6' width='800' height='300'/%3E%3Ctext fill='white' font-size='24' font-family='Arial' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EMachine Learning%3C/text%3E%3C/svg%3E" alt="Machine Learning">
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                <a href="#" class="read-more">Continue Reading →</a>
+            </article>
+
+            <article>
+                <h2>Cloud Computing Trends for 2025</h2>
+                <div class="meta">Posted on December 10, 2024 by Alex Johnson | 6 min read</div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='300'%3E%3Crect fill='%2316a085' width='800' height='300'/%3E%3Ctext fill='white' font-size='24' font-family='Arial' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECloud Computing%3C/text%3E%3C/svg%3E" alt="Cloud Computing">
+                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#" class="read-more">Continue Reading →</a>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Popular Posts</h3>
+                <ul>
+                    <li><a href="#">Introduction to Quantum Computing</a></li>
+                    <li><a href="#">The Rise of Edge Computing</a></li>
+                    <li><a href="#">Cybersecurity Best Practices</a></li>
+                    <li><a href="#">5G Networks Explained</a></li>
+                    <li><a href="#">Blockchain Beyond Cryptocurrency</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Artificial Intelligence (12)</a></li>
+                    <li><a href="#">Cloud Computing (8)</a></li>
+                    <li><a href="#">Web Development (15)</a></li>
+                    <li><a href="#">Data Science (10)</a></li>
+                    <li><a href="#">Cybersecurity (7)</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Archives</h3>
+                <ul>
+                    <li><a href="#">December 2024</a></li>
+                    <li><a href="#">November 2024</a></li>
+                    <li><a href="#">October 2024</a></li>
+                    <li><a href="#">September 2024</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Add your chatbot script here -->
+    <!-- <script src="https://your-chatbot-url.com/embed.js"></script> -->
+</body>
+</html>
